@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Instagram Clone</string>
+    <string name="google_logo">google logo</string>
+    <string name="floating_action_button">floating action button</string>
+</resources>

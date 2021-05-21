@@ -2,4 +2,8 @@
     <string name="app_name">Instagram Clone</string>
     <string name="google_logo">google logo</string>
     <string name="floating_action_button">floating action button</string>
+    <string name="profile">profile</string>
+    <string name="post">POST</string>
+    <string name="what_do_you_want_to_talk_about">What do you want to talk about?</string>
+    <string name="choose_image">Choose Image</string>
 </resources>

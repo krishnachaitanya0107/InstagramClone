@@ -13,29 +13,29 @@
         <ImageView
             android:layout_width="42dp"
             android:layout_height="42dp"
-            android:id="@+id/userImage"
+            android:id="@+id/commentedByUserImage"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/userName"
+            android:id="@+id/commentedByUserName"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            app:layout_constraintLeft_toRightOf="@id/userImage"
+            app:layout_constraintLeft_toRightOf="@id/commentedByUserImage"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="@id/userImage"
+            app:layout_constraintTop_toTopOf="@id/commentedByUserImage"
             android:layout_marginLeft="12dp"
             android:textSize="16sp"
             android:textColor="#212121"
             android:textStyle="bold"/>
 
         <TextView
-            android:id="@+id/createdAt"
+            android:id="@+id/createdTime"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            app:layout_constraintLeft_toRightOf="@id/userImage"
+            app:layout_constraintLeft_toRightOf="@id/commentedByUserImage"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/userName"
+            app:layout_constraintTop_toBottomOf="@id/commentedByUserName"
             android:layout_marginTop="4dp"
             android:layout_marginLeft="12dp" />
 
@@ -44,37 +44,11 @@
             android:layout_height="wrap_content"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/userImage"
-            android:id="@+id/postTitle"
+            app:layout_constraintTop_toBottomOf="@id/commentedByUserImage"
+            android:id="@+id/commentTitle"
             android:textSize="16sp"
             android:layout_marginTop="12dp"
             android:textColor="#212121" />
-
-        <ImageView
-            android:id="@+id/likeButton"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            app:layout_constraintLeft_toLeftOf="@id/postTitle"
-            app:layout_constraintTop_toBottomOf="@id/postTitle"
-            android:layout_marginTop="16dp" />
-
-        <TextView
-            android:id="@+id/likeCount"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintLeft_toRightOf="@id/likeButton"
-            app:layout_constraintTop_toTopOf="@id/likeButton"
-            android:layout_marginLeft="6dp"
-            app:layout_constraintBottom_toBottomOf="@id/likeButton" />
-
-        <ImageView
-            android:id="@+id/commentButton"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:background="@drawable/ic_comment"
-            app:layout_constraintRight_toRightOf="@id/postTitle"
-            app:layout_constraintTop_toBottomOf="@id/postTitle"
-            android:layout_marginTop="16dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

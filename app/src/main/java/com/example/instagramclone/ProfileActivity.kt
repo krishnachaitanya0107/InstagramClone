@@ -24,6 +24,7 @@ class ProfileActivity : AppCompatActivity() {
         Glide.with(this).load(user?.photoUrl).circleCrop().into(profile_pic)
 
         sign_out_button.setOnClickListener {
+
             auth.signOut()
             val intent= Intent(this,SigninActivity::class.java)
             startActivity(intent)

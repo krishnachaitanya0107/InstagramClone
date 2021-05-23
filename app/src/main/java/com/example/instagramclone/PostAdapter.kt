@@ -26,6 +26,7 @@ class PostAdapter(options: FirestoreRecyclerOptions<Post>, val listener: IPostAd
         val userImage: ImageView = itemView.findViewById(R.id.userImage)
         val likeButton: ImageView = itemView.findViewById(R.id.likeButton)
         val commentButton:ImageView=itemView.findViewById(R.id.commentButton)
+        val postImageImageView:ImageView=itemView.findViewById(R.id.postImageImageView)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PostViewHolder {
@@ -36,13 +37,13 @@ class PostAdapter(options: FirestoreRecyclerOptions<Post>, val listener: IPostAd
         viewHolder.commentButton.setOnClickListener {
             listener.onCommentClicked(snapshots.getSnapshot(viewHolder.adapterPosition).id)
         }
-
         return viewHolder
     }
 
     override fun onBindViewHolder(holder: PostViewHolder, position: Int, model: Post) {
         holder.postText.text = model.text
         holder.userText.text = model.createdBy.displayName
+        Glide.with(holder.postImageImageView.context).load(model.postImageUrl).into(holder.postImageImageView)
         Glide.with(holder.userImage.context).load(model.createdBy.imageUrl).circleCrop().into(holder.userImage)
         holder.likeCount.text = model.likedBy.size.toString()
         holder.createdAt.text = Utils.getTimeAgo(model.createdAt)

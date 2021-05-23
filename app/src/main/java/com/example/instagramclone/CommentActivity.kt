@@ -3,6 +3,7 @@ package com.example.instagramclone
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.instagramclone.daos.CommentDao
 import com.example.instagramclone.daos.PostDao
@@ -30,8 +31,9 @@ class CommentActivity : AppCompatActivity() {
             if(commentText.isNotEmpty())
             {
                 commentDao.addComment(commentText, postId.toString())
-                chat_message_view.text=null
+                chat_message_view.setText("")
                 adapter.notifyDataSetChanged()
+                Toast.makeText(this,"Comment Added !",Toast.LENGTH_SHORT).show()
             }
         }
         setUpCommentsRecyclerView(postId.toString())

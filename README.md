@@ -20,4 +20,4 @@ A clone of the popular instagram app .
 - Glide Library
 
 # Credits
-I would like to thank Anuj Kumar Sharma for giving me a good headstart on this project . 
+I would like to thank Mr Anuj Kumar Sharma for giving me a good headstart on this project . 

@@ -1,7 +1,9 @@
 # Instagram Clone App
+
 A clone of the popular instagram app .
 
-# Features of the app
+# Features
+
 - Google Sign-In Authentication is used here so that users can sign-in using their google account
 - users can upload posts containing an image and some text
 - users can view all the posts with the latest posts on top 
@@ -11,13 +13,11 @@ A clone of the popular instagram app .
 - The backend database used here is the Firebase database
 - Firebase UI is used here which makes it simple and easy to bind data from the firebase
 
-# Tech / framework used
+# Tools & Technology Used
+
 - Android Studio
 - Kotlin
 - Firebase Authentication
 - Firebase FireStore
 - Firebase Storage
 - Glide Library
-
-# Credits
-I would like to thank Mr Anuj Kumar Sharma for giving me a good headstart on this project . 

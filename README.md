@@ -1,6 +1,6 @@
 # Instagram Clone App
 
-A clone of the popular instagram app .
+A clone of the popular instagram app . A social media android application where users can sign-in , upload posts containing an image and some text , like / unlike and comment on posts .
 
 # Features
 
